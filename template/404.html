@@ -1,0 +1,23 @@
+{% extends 'template/base.html' %}
+
+{% block css %}
+    <link rel="stylesheet" href="error.css">
+    <link rel="stylesheet" href="404.css">
+    <link rel="stylesheet" href="404_normalize.css">
+
+{% endblock %}
+
+{% block title %}
+    Page Not Found
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+	<div class="container">
+		<h1 class="title">404</h1>
+		<p class="sub-heading"> Page Not Found</p>
+		<hr class="hr-style-404"/>
+		<p class="redirect-style-404">Something went wrong</p>
+	</div>
+</div>
+{% endblock %}

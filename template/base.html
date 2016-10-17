@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- css -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-theme.min.css">
+    {% block css %}
+    {% endblock %}
+    <!-- css end -->
+
+
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+
+</head>
+<body>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+
+    <script src="bootstrap.min.js"></script>
+
+    {% block js %}
+    {% endblock %}
+
+</html>
