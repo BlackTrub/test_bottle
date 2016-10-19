@@ -10,8 +10,13 @@ app = Bottle()
 
 
 @app.route('/')
-def index():
+def home_page():
     return template('template/home.html')
+
+
+@app.route('/news')
+def news_page():
+    return template('template/news.html')
 
 
 @app.error(404)
