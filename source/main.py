@@ -11,10 +11,7 @@ app = Bottle()
 
 @app.route('/')
 def index():
-    context = {
-        'name': u'Петрович'
-    }
-    return template('template/base.html', context)
+    return template('template/home.html')
 
 
 @app.error(404)
