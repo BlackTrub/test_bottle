@@ -19,6 +19,11 @@ def news_page():
     return template('template/news.html')
 
 
+@app.route('/applicate')
+def applicate_page():
+    return template('template/applicate.html')
+
+
 @app.error(404)
 def error404(error):
     return template('template/404.html')
